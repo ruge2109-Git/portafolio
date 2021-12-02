@@ -565,7 +565,7 @@
         </div>
       </div>
 
-      <form class="php-email-form mt-4" netlify name="formContact">
+      <form class="php-email-form mt-4" name="formContact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
         <div class="row">
           <div class="col-md-6 form-group">
             <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" required>
@@ -580,6 +580,7 @@
         <div class="form-group mt-3">
           <textarea class="form-control" name="message" rows="5" placeholder="Escribe el mensaje" required></textarea>
         </div>
+        <div data-netlify-recaptcha="true"></div>
         <div class="my-3">
           <div class="loading">Cargando...</div>
           <div class="error-message"></div>
